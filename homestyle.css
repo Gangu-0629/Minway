@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg,black,rgb(33, 33, 33),black);
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15vh;
+    width:100%;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 40px;
+    color: #2d0793;
+}
+h1{
+    box-shadow: 0px 0px 20px white;
+    border-radius: 20px;
+}
+.instrut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    height:40vh;
+    width:100%;
+  
+}
+.instrut h2{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 2rem;
+}
+
+
+li{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1.5rem;
+}
+.stylestart{
+  
+    padding:20px;
+    margin-top:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.designstart{
+   
+    height:60vh;
+    width:100%;
+    display: flex;
+}
+.o1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width:35%;
+    height: 100%;
+}
+.o2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:30%;
+    height: 100%;
+}
+.o3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:35%;
+    height: 100%;
+}
+.designcon{
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation-name: rotating;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes rotating {
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.designcon div{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    transform-style: preserve-3d;
+    background-color:linear-gradient(to top,#FB2576);
+}
+.sidestyle{
+    background-color: #FB2576;
+}
+.designcon div span
+{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-color:linear-gradient(to top,#FB2576);
+  box-shadow: 0px 0px 20px rgb(255, 0, 43);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.shadow{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+  background-color: #FB2576;
+  box-shadow: 0px 0px 200px #FB2576;
+  filter: blur(30px);
+
+  transform: rotateX(90deg) translateZ(-200px);
+   
+
+}
+.top{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+  background-color: #f7176d;
+  box-shadow: 0px 0px 20px #FB2576;
+   opacity: 0.6;
+  transform: rotateX(90deg) translateZ(150px);
+   
+
+}
+img{
+    height: 100%;
+    width:100%;
+}
+
+
+.o2 a{
+    padding:2rem;
+    background-color: #2d0793;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Tilt Prism', cursive;
+    border-radius: 30px;
+    border: 2px solid #FB2576;
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 10px #FB2576;
+}
+.o2 a:hover{
+    transform: translate(-10%,-10%);
+    transition: 0.2s ease;
+    box-shadow: 10px 10px 10px #FB2576;
+}
+@media screen and (max-width:10000px)
+{
+    .designcon{
+        position: relative;
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+    li{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+    .designstart{
+        flex-direction: column;
+        height:200vh;
+    }
+    .o1,.o2,.o3{
+        width:100%;
+        height:100vh;
+    }
+}

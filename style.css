@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background-image: linear-gradient(45deg,black,rgb(40, 39, 39),black);
+}
+.outmain{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15vh;
+    width:100%;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 40px;
+    color: #2d0793;
+}
+h1{
+    box-shadow: 0px 0px 20px white;
+    border-radius: 20px;
+}
+.outmain .game{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.outmain .game .gamebox{
+    border-radius: 20px;
+    height:80%;
+    width:40%;
+    background-color: rgb(21, 21, 21);
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px white;
+}
+.outmain .game .gamebox .board{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background-color: black;
+  
+
+}
+.outmain .game .gamebox .board .con{
+    border-radius: 20px;
+    width:90%;
+    height:90%;
+    background-image: linear-gradient(45deg, #2dad1c, #51dbe0, #ad781c);
+    display:grid;
+    grid-template-areas: "s0 s1 s2 s3 s4" "s5 s6 s7 s8 s9" "s10 s11 s12 s13 s14" "s15 s16 s17 s18 s19" "s20 s21 s22 s23 s24";
+}
+.bo{
+    position: relative;
+    width:100%;
+    height:100% ;
+    font-size: 20px;
+  
+    border: 2px solid white;
+    color: #525207;
+    font-size:2rem;
+}
+
+#box-0
+{
+    border-top-left-radius: 20px;
+    grid-area:s0;
+}
+#box-1
+{
+    grid-area:s1;
+}
+
+#box-2
+{
+    grid-area:s2;
+}
+#box-3
+{
+    grid-area:s3;
+}
+#box-4
+{
+    border-top-right-radius: 20px;
+    grid-area:s4;
+}
+#box-5
+{
+    grid-area:s5;
+}
+#box-6
+{
+    grid-area:s6;
+}
+#box-7
+{
+    grid-area:s7;
+}
+#box-8{
+    grid-area: s8;
+}
+
+#box-9
+{
+    grid-area:s9;
+}
+#box-10
+{
+    grid-area:s10;
+}
+
+#box-11
+{
+    grid-area:s11;
+}
+#box-12
+{
+    grid-area:s12;
+}
+#box-13
+{
+    grid-area:s13;
+}
+#box-14
+{
+    grid-area:s14;
+}
+#box-15
+{
+    grid-area:s15;
+}
+#box-16
+{
+    grid-area:s16;
+}
+#box-17{
+    grid-area: s17;
+}
+
+#box-18
+{
+    grid-area:s18;
+}
+#box-19
+{
+    grid-area:s19;
+}
+
+#box-20
+{
+    border-bottom-left-radius: 20px;
+    grid-area:s20;
+}
+#box-21
+{
+    grid-area:s21;
+}
+#box-22
+{
+    grid-area:s22;
+}
+#box-23
+{
+    grid-area:s23;
+}
+#box-24
+{
+   border-bottom-right-radius: 20px;
+    grid-area:s24;
+}
+.fit{
+    position: absolute;
+    bottom: 0;
+    width:80%;
+    height:80%;
+}
+
+.robot{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:100%;
+}
+
+
+
+.outmain .game .gamebox .control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+   
+    gap:10%;
+}
+.stylebutton{
+    font-size: 2rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    width:25%;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    height:80%;
+    border-radius: 30px;
+    background-color: black;
+    color:blue;
+
+}
+.stylebutton:active{
+    background-color: black;
+    box-shadow: 0px 0px 20px white;
+}
+.stylebutton:hover{
+    background-color: black;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px black;
+}
+.outmain .game .displaybox{
+    height:80%;
+    width:40%;
+   
+}
+.gamescreeen{
+    border:2px solid black;
+    border-radius: 30px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height:60%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Rubik Wet Paint', cursive;
+    color:rgb(255, 0, 0);
+    font-size: 3rem;
+    box-shadow: 0px 0px 5px white;
+}
+.outmain .game .displaybox .score
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+          width:100%;
+          height: 35%;
+          
+}
+.outmain .game .displaybox .minimum
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 35%;
+  
+}
+h2{
+    font-family: 'Passion One', cursive;
+    font-size: 2rem;
+    color:#030a9a;
+}
+.outmain .game .displaybox .comment
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 30%;
+    
+   color: #030a9a;
+  
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .header{
+        height:10vh;
+    }
+    h1{
+        font-size:2rem;
+    }
+    
+    .outmain .game{
+        flex-direction: column;
+    }
+    .outmain .game .gamebox{
+        height:100%;
+        width:80%;
+    }
+    .outmain .game .displaybox{
+        width:80%;
+    }
+    .outmain .game{
+        height:100vh;
+    }
+    .bo{
+        font-size:1.5rem
+    }
+    .gamescreeen{
+        font-size: 2rem;
+    }
+    .man,.woman{
+        width:50px;
+        height:50px;
+    }
+    .userip{
+        margin-top: 10px;
+        font-size:1rem;
+    }
+    .userip h2{
+        font-size:1rem;
+    }
+    .stylebutton{
+        font-size: 1rem;
+    }
+    .outmain .footer button{
+        height:50%;
+    }
+}
+
+
+
+
+.userip{
+    height:50vh;
+    width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size:2rem;
+  flex-direction: column;
+  color:white
+
+
+}
+.imgchar{
+    width:100%;
+    width:100%;
+}
+.man{
+    height:200px;
+    width:200px;
+    background-color: red;
+    cursor: pointer;
+}
+.man:hover,.woman:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px white;
+}
+.man:active,.woman:active{
+     transform: scale(1.2);
+
+}
+.woman{
+    height:200px;
+    width:200px;
+    background-color: red;
+    cursor: pointer;
+}
+.character{
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+}
+.userip h2{
+    font-size:2rem;
+    color: #2f1cad;
+}
+
+.okbuttton{
+    width:60px;
+    height:70px;
+    border-radius: 20px;
+    background-color: #2d1cad;
+    font-size: 2rem;
+    color:white;
+}
+.okbuttton:active{
+    background-color: antiquewhite;
+    color:blue;
+    box-shadow: 0px 0px 10px blue;
+}
+.username{
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size:3rem;
+}
+#usna{
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size:3rem;
+    width:300px;
+    height:50px;
+    font-size: 30px;
+}
+
+
+.outmain .footer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:20vh;
+   
+}
+.outmain .footer button{
+    background-color: blue;
+    width:25%;
+
+}
+.outmain .footer button:active{
+    transform: scale(0.9);
+}
+.outmain .footer button a{
+    text-decoration: none;
+    color: red;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+.MYNAME{
+ 
+ 
+    padding:14px;
+    font-family: 'Rubik Pixels', cursive;
+    border-radius: 20px;
+    font-size: 2rem;
+    background-color: rgb(0, 4, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 40px black;
+}
